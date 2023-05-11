@@ -1,0 +1,10 @@
+.galaxy{
+    width: 100%;
+    object-fit: contain;
+    top: 120px;
+position: relative;
+}
+
+@media screen and (min-width: 900px) {
+
+}

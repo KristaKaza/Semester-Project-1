@@ -1,0 +1,128 @@
+.title-exhibition {
+    font-size: 61px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    position: relative;
+    padding-top: 55px;
+    display: flex;
+    justify-content: center;
+}
+
+.exhibition-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.exhibition-img {
+    width: 100%;
+    height: 20em;
+    object-fit: cover;
+    clip-path: inset(0 145px 0 145px);
+}
+
+.exhibition-text-container {
+    width: 100%;
+    max-width: 82.4%;
+    text-align: center;
+    background-color: rgba(241, 241, 241, 0.7);
+    margin-bottom: 45px;
+}
+
+.cosmology-title, .evolution-title, .biology-title, .robotics-title, .ecology-title  {
+    color: white;
+    font-size: 38px;
+    display: flex;
+    align-items: center;
+    padding: 10px 25px 10px 25px;
+    margin-top: -7px;
+    justify-content: center;
+    position: relative;
+}
+
+.cosmology-title {
+    background-color: rgba(212, 113, 41, 1);
+}
+
+.evolution-title {
+    background-color: rgba(0, 106, 62, 1);
+}
+
+.biology-title {
+    background-color: rgba(0, 116, 200, 1);
+}
+
+.robotics-title {
+    background-color: rgba(104, 21, 211, 1);
+}
+
+.ecology-title {
+    background-color: rgb(0 117 145);
+}
+
+.exhibition-text {
+    width: auto;
+    font-size: 22px;
+    position: relative;
+    padding: 50px;
+    line-height: 1.9;
+    top: -32px;
+}
+
+.btn-book {
+    padding: 16px 40px 16px 40px;
+    background-color: black;
+    color: white;
+    font-weight: 800;
+    top: -40px;
+    position: relative;
+    display: inline;
+}
+
+
+@media screen and (max-width: 900px){
+
+    .title-exhibition {
+    font-size: 35px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    }
+    
+    .exhibition-img {
+        width: 82%;
+        height: 10em;
+        clip-path: none;
+        object-fit: cover;
+    }
+
+    .cosmology-title, .evolution-title, .biology-title, .ecology-title, .robotics-title {
+        width: auto;
+        position: relative;
+        display: flex;
+        font-size: 22px;
+        flex-direction: column;
+        align-content: center;
+        align-items: flex-start;
+        justify-content: center;
+        flex-wrap: wrap;
+      }    
+
+    .exhibition-text {
+        width: auto;
+        padding: 30px;
+        font-size: 16px;
+        left: 0;
+        top: -16px;
+    }
+
+    .exhibition-text-container {
+        width: 100%;
+        max-width: 82.4%;
+        text-align: center;
+    }
+
+    .btn-book {
+        padding: 10px 20px;
+    }
+}
