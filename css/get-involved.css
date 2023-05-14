@@ -1,43 +1,82 @@
 .hero-involved {
-    height: 50%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+    width: 100%;
+    height: 707px;
+    object-fit: cover;
 }
 
 .title-involved {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin: -7px 0;
+    background-color: rgba(19, 93, 113);
+    width: fit-content;
+    padding: 15px 35px;
     color: white;
 }
 
-.support {
+.involved-container {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: stretch;
-    font-size: 22px;
-    width: 54em;
-    position: absolute;
-    top: 830px;
-    left: 15%;
+    margin-left: 15em;
+    margin-right: 15em;
+    margin-top: 22px;
+}
+
+.involved-container h2 {
+    font-size: 40px;
+    margin-top: 60px;
+    border-bottom: 2px solid black;
+    width: fit-content;
+}
+
+.involved-container p {
+    font-size: 20px;
+    margin: 0;
+}
+
+.box {
+    background-color: rgba(217, 217, 217, 0.51);
+    width: fit-content;
+    padding: 19px 60px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: flex-start;
+    margin-left: 15em;
+    border-radius: 21px;
+    margin-top: 5em;
+    margin-bottom: 3em;
+}
+
+.box p {
+    font-size: 18px;
 }
 
 @media screen and (max-width: 900px) {
     .hero-involved {
-        width: auto;
+        height: auto;
     }
 
     .title-involved {
-        font-size: 40px;
-        top: auto;
+        font-size: 25px;
+        width: auto;
     }
 
-    .support {
-        padding: 10px;
+    .involved-container {
+        margin-right: 15px;
+        margin-left: 30px;
+    }
+
+    .box {
+        margin: 10px 0 0 0;
+        padding: 22px;
+        width: 23.5em;
+        border-radius: 14px;
     }
 }

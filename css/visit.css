@@ -1,0 +1,102 @@
+.visit-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.museum-img {
+    width: 100%;
+    height: 645px;
+    object-fit: cover;
+}
+
+.visit-title {
+    background-color: rgba(240, 207, 56, 1);
+    padding: 15px 35px;
+    margin-top: auto;
+}
+
+.hours-location-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-left: 20px;
+}
+
+.opening-hours ul {
+    list-style: none;
+    display: inline;
+    padding-top: 0;
+    font-size: 21px;
+    line-height: 2em;
+}
+
+.hours-location-container h2, .admission-container h2 {
+    font-size: 50px;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.location h3 {
+    font-size: 21px;
+    color: black;
+    font-weight: normal;
+}
+
+.admission-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    position: relative;
+    margin-left: 17em;
+    padding-right: 265px;
+    margin-bottom: 80px;
+}
+
+.admission-container p {
+    font-size: 21px;
+}
+
+@media screen and (max-width: 900px) {
+    
+    .visit-title{
+    padding: 5px 17px;
+    }
+
+    .museum-img {
+        height: auto;
+    }
+
+    .hours-location-container {
+        justify-content: flex-start;
+    }
+
+    .hours-location-container img {
+        width: 100%;
+        padding-right: 15px;
+    }
+
+    .opening-hours ul, .location h3 {
+        font-size: 18px;
+    }
+
+    .admission-container {
+        margin-left: 0;
+        padding-right: 0;    
+    }
+
+    .hours-location-container h2, .admission-container h2 {
+        font-size: 36px;
+        margin-bottom: 0;
+        font-weight: bold;
+        padding-left: 10px;
+    }
+
+    .admission-container p {
+        font-size: 18px;
+        padding-left: 13px;
+    }
+    
+}
