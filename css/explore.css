@@ -198,3 +198,26 @@ background-color: rgba(200, 167, 17, 0.43);
 
 }
 
+@media screen and (max-width: 1550px) {
+
+    .kids-container, .teachers-container, .researchers-container {
+        margin-left: 0;
+    }
+
+}
+
+@media screen and (max-width: 1450px) {
+
+    .kids-container, .teachers-container, .researchers-container {
+        width: auto;
+        margin-left: 0;
+    }
+
+    .for-kids, .kids-container p, .teachers-container p, .researchers-container p, .text-two, .paragraph {
+        width: auto;
+        padding: 2em;
+        margin-left: 0;
+    }
+
+}
+
