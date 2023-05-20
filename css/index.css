@@ -77,9 +77,9 @@
     color: white;
 }
 
-.underlined {
+.underlined a{
     margin-bottom: 2em;
-    text-decoration: underline;
+    color: white;
 }
 
 .events-exhibitions {
@@ -161,11 +161,15 @@
     margin-bottom: 0;
 }
 
+.book-now a {
+    text-decoration: none;
+    color: white;
+}
+
 
 
 @media screen and (max-width: 900px) {
     .hero-container img {
-        width: auto;
         height: 21em;
     }
 
@@ -173,26 +177,28 @@
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        width: fit-content;
+        width: auto;
     }
 
-    .main-text{
+    .main-text {
         display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 1em 0;
+        margin: 0 10px;
     }
     
     .hero-container h1 {
         font-size: 30px;
-        padding: 0 1em;
+        margin: 0;
         text-shadow: none;
     }
 
     .hero-container p {
         width: auto;
         font-size: 18px;
-        padding-top: 0;
+        padding: 0;
     }
 
     .news-container {
@@ -209,9 +215,7 @@
     }
 
     .grid-container-home img {
-        width: auto;
-        margin: 0;
-        font-size: 18px;
+        padding: 1em;
     }
 
     .main-paragraph p {
@@ -245,19 +249,14 @@
         margin: 1em;
     }
 
-    .news-container {
-    margin-left: 0;
-    margin-right: 0;
-    }
-
-    .astronat-container{
+    .astronaut-container{
         display: flex;
         flex-direction: column;
         align-items: stretch;
         flex-wrap: wrap;
     }
 
-    .astronat-container h2, .news-container h2, .energetica-container h2 {
+    .astronaut-container h2, .news-container h2, .energetica-container h2 {
         font-size: 26px;
         padding-left: 1em;
     }
@@ -316,16 +315,15 @@
 @media screen and (max-width: 1490px) {
 
      .grid-container-home img, .grid-container-home p, .main-paragraph p  {
-        margin-left: 2em;
         margin-right: 0;
-        width: auto;
+        width: 100%;
         padding: 1em;
+        margin-left: 0;
      }
 
      .news-container {
         display: flex;
         row-gap: 2em;
-        flex-direction: row;
         flex-wrap: wrap;
      }
 }

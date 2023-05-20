@@ -43,11 +43,6 @@
     width: fit-content;
     padding: 19px 60px;
     position: relative;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-    align-items: flex-start;
     margin-left: 15em;
     border-radius: 21px;
     margin-top: 5em;
@@ -56,6 +51,18 @@
 
 .box p {
     font-size: 18px;
+}
+
+.emails {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.emails a {
+    text-decoration: none;
+    color: black;
 }
 
 @media screen and (max-width: 900px) {
@@ -74,9 +81,13 @@
     }
 
     .box {
-        margin: 10px 0 0 0;
-        padding: 22px;
-        width: 23.5em;
-        border-radius: 14px;
+        margin: 1em 0;
+        padding: 6px;
+        width: auto;
+        border-radius: 0;
+    }
+
+    .box p {
+        font-size: 14px;
     }
 }

@@ -16,7 +16,6 @@
     font-size: 20px;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
     flex-wrap: wrap;
     line-height: 2;
 }
@@ -29,7 +28,6 @@
 .for-kids {
     display: flex;
     flex-direction: column;
-    align-content: center;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;

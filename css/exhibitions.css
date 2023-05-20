@@ -80,6 +80,11 @@
     display: inline;
 }
 
+.btn-book a {
+    text-decoration: none;
+    color: white;
+}
+
 
 @media screen and (max-width: 900px){
 

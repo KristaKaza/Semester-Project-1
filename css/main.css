@@ -112,7 +112,16 @@ nav a {
   font-weight: 300;
   text-transform: uppercase;
   opacity: 0;
-  transition: opacity 150ms ease-in-out;
+  animation: opacityEntry 150ms ease-in-out forwards;
+}
+
+@keyframes opacityEntry {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
 }
 
 nav a:hover {
@@ -207,6 +216,11 @@ footer {
   margin-top: 2em;
 }
 
+.logo-footer a {
+  text-decoration: none;
+  color: white;
+}
+
 .row {
   padding: 2em 4em;
 }
@@ -250,7 +264,8 @@ h3 {
   margin-top: 0.8em;
 }
 
-.links ul li {
+.column.links ul li a {
+  text-decoration: none;
   color: white;
 }
 
